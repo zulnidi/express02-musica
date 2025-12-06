@@ -1,0 +1,151 @@
+/* Estilo global */
+
+/* Header general */
+header {
+  background-color: #4CAF50; /* verde más suave */
+  padding: 15px 0;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Lista de enlaces */
+header nav {
+  display: flex;
+  justify-content: center; /* centra los links horizontalmente */
+  gap: 30px;               /* espacio entre enlaces */
+  flex-wrap: wrap;         /* se acomoda si la pantalla es pequeña */
+}
+
+/* Estilo de los links */
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 5px 10px;
+  transition: background 0.3s, color 0.3s;
+  border-radius: 5px;
+}
+
+header nav a:hover {
+  background-color: #45a049; /* más oscuro al pasar el mouse */
+  color: #fff;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+
+  display: flex;
+  flex-direction: column; /* los elementos van uno debajo del otro */
+  align-items: center;    /* centra horizontalmente */
+  gap: 20px;              /* espacio entre elementos */
+}
+
+
+/* Encabezados */
+h1, h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Inputs y selects */
+.input {
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+  max-width: 400px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* Botones */
+.button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+
+/* Listas */
+ul {
+  list-style: none;
+  padding-left: 0;
+  width: 100%;
+}
+
+li {
+  padding: 12px 15px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+}
+
+li:hover {
+  background-color: #f9f9f9;
+}
+
+/* Links dentro de listas */
+li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+li a:hover {
+  color: #4CAF50;
+}
+
+/* Mensajes */
+p {
+  text-align: center;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* Formularios flexibles (ej. AddSong) */
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Ajuste responsivo */
+@media (max-width: 600px) {
+  .form-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .input, .button {
+    width: 100%;
+    max-width: none;
+  }
+}
